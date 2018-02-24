@@ -8,7 +8,7 @@ function hasNum(arr, n) {
     for (var i = 0; i < arr.length; i++) {
         var a = arr[i];
         if (n === a) {
-            return true;    
+            return true;
         };
     };
     return false;
@@ -63,7 +63,7 @@ function resetAll() {
     };
 };
 
-// 
+//
 function changeColor() {
     var counts = randomIds();
     var colors = colorArray();
@@ -82,7 +82,6 @@ function changeColor() {
 function bindEventStart() {
     var start = document.querySelector('#btn1');
     start.addEventListener('click', function() {
-        console.log('click');
         clockId = setInterval(function() {
             changeColor();
         }, 1000);
